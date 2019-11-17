@@ -1,0 +1,107 @@
+body {
+    background-color: #F2F2F2;
+    max-width: 1920px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+.nav_bar ul {
+    display: flex;
+}
+
+.nav_bar a {
+    padding: 0 3vw;
+    color: white;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+}
+
+.nav_bar a:hover {
+    color: #FF0000;
+    opacity: .6;
+}
+
+.nav_bar li {
+    border-right: 1px solid #5c5c5c;
+}
+
+.nav_bar li:last-child {
+    border: none;
+}
+
+.lang_switcher button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang_switcher button:active {
+    opacity: .6;
+}
+
+.lang_switcher span {
+    color: #5c5c5c;
+}
+
+.nav_wrapper {
+    display: flex;
+    max-width: 1570px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.main_wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.header_bar {
+    background-color: black;
+}
+
+.video_presentation {
+    position: relative;
+}
+
+.video_title {
+    position: absolute;
+    width: 550px;
+    color: white;
+    bottom: 35%;
+    left: 8%;
+}
+
+.video_title h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 77px;
+    word-wrap: normal;
+    margin-bottom: 60px;
+}
+
+.video_title p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.divider {
+    height: 4px;
+    background-color: white;
+}
+
+figure {
+    margin: 0;
+}
+
