@@ -8,10 +8,13 @@ body {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 h1, h2, h3, h4, h5, p {
     margin: 0;
 }
+
 .nav_bar ul {
     display: flex;
 }
@@ -44,6 +47,11 @@ h1, h2, h3, h4, h5, p {
     outline: none;
 }
 
+.social_links a {
+    color: #007EFF;
+    margin-right: 10px;
+}
+
 .lang_switcher button:active {
     opacity: .6;
 }
@@ -66,8 +74,17 @@ h1, h2, h3, h4, h5, p {
     margin: 0 auto;
 }
 
+header {
+    position: relative;
+    margin-bottom: 66px;
+}
+
 .header_bar {
     background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
 }
 
 .video_presentation {
@@ -78,7 +95,7 @@ h1, h2, h3, h4, h5, p {
     position: absolute;
     width: 550px;
     color: white;
-    bottom: 35%;
+    bottom: 20%;
     left: 8%;
 }
 
@@ -96,6 +113,11 @@ h1, h2, h3, h4, h5, p {
     margin-top: 50px;
 }
 
+video[poster] {
+    height: 100vh;
+    object-fit: fill;
+}
+
 .divider {
     height: 4px;
     background-color: white;
@@ -105,3 +127,138 @@ figure {
     margin: 0;
 }
 
+.news_block {
+    display: flex;
+    justify-content: center;
+}
+
+.main_news {
+    width: 950px;
+}
+
+.newest_block {
+    margin-bottom: 44px;
+}
+
+.info_block {
+    display: flex;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info_text p {
+    line-height: 1.5;
+}
+
+h3.info_title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.picture {
+    min-width: 624px;
+    margin-right: 20px;
+}
+
+.date {
+    font-size: 12px;
+    color: #555555;
+}
+
+.hashtag {
+    font-weight: bold;
+}
+
+.hashtag.event {
+    color: #007EFF;
+}
+
+.hashtag.press {
+    color: #FF0000;
+}
+
+.hashtag.meetup {
+    color: #18CA06;
+}
+
+.date_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.filter_block {
+    margin-right: 24px;
+    width: 300px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.filter_block h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #373737;
+}
+
+.filter_block h2:after {
+    content: "";
+    display: block;
+    background-color: #FF0000;
+    height: 4px;
+    width: 138px;
+}
+
+.filter_links {
+    padding: 0;
+    list-style: none;
+}
+
+.filter_links li a {
+    color: #555555;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+}
+
+.filter_links li {
+    margin-bottom: 10px;
+}
+
+.download_btn {
+    background: url("../images/Download.svg") 255px 8px no-repeat;
+    background-color: #007EFF;
+    border: none;
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    text-align: start;
+    cursor: pointer;
+    margin-top: 16px;
+    outline: none;
+}
+
+.latest_news .info_block {
+    display: flex;
+    flex-direction: column;
+    width: 462px;
+    margin-right: 24px;
+    height: 583px;
+}
+
+.latest_news .info_text {
+    flex-grow: 2;
+}
+
+.latest_news {
+    display: flex;
+}
