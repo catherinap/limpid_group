@@ -11,11 +11,11 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, figure {
     margin: 0;
 }
 
-.nav_bar ul {
+.nav_bar ul, .info_block, .latest_news {
     display: flex;
 }
 
@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, p {
     color: white;
     text-decoration: none;
     font-family: "PT Sans", sans-serif;
+    transition: .5s;
 }
 
 .nav_bar a:hover {
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5, p {
 
 header {
     position: relative;
-    margin-bottom: 66px;
+    margin-bottom: 60px;
 }
 
 .header_bar {
@@ -123,16 +124,13 @@ video[poster] {
     background-color: white;
 }
 
-figure {
-    margin: 0;
-}
-
 .news_block {
     display: flex;
     justify-content: center;
+    margin-bottom: 120px;
 }
 
-.main_news {
+.main_news, .about_post, .slider_block {
     width: 950px;
 }
 
@@ -140,28 +138,30 @@ figure {
     margin-bottom: 44px;
 }
 
-.info_block {
-    display: flex;
-}
-
 .info_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .info_text p {
     line-height: 1.5;
+    text-decoration: underline;
+    color: #555555;
 }
 
 h3.info_title {
     font-weight: bold;
     font-size: 24px;
+    text-decoration: underline;
 }
 
-
 .picture {
-    min-width: 624px;
-    margin-right: 20px;
+    margin-right: 24px;
+}
+
+img {
+    width: auto;
 }
 
 .date {
@@ -191,28 +191,28 @@ h3.info_title {
     margin-top: 5px;
 }
 
+.flex_block {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 510px;
+    margin-top: 50px;
+}
+
 .filter_block {
     margin-right: 24px;
     width: 300px;
     height: 560px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .filter_block h2 {
+    display: inline-flex;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
     font-size: 48px;
     color: #373737;
-}
-
-.filter_block h2:after {
-    content: "";
-    display: block;
-    background-color: #FF0000;
-    height: 4px;
-    width: 138px;
+    border-bottom: 4px solid #FF0000;
+    text-transform: uppercase;
 }
 
 .filter_links {
@@ -231,8 +231,9 @@ h3.info_title {
 }
 
 .download_btn {
-    background: url("../images/Download.svg") 255px 8px no-repeat;
-    background-color: #007EFF;
+    background: white url("../images/download_white.png") 255px 7px no-repeat;
+    background-color: #1D49BA;
+    background-size: 25px;
     border: none;
     color: white;
     font-family: "Heebo", sans-serif;
@@ -259,6 +260,89 @@ h3.info_title {
     flex-grow: 2;
 }
 
-.latest_news {
+.about_block {
     display: flex;
+    justify-content: center;
+    margin-bottom: 148px;
+}
+
+.about_block .filter_block h2 {
+    margin-bottom: 60px;
+}
+
+.about_post h3.info_title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #373737;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.about_post .info_text p {
+    text-decoration: none;
+    line-height: 1.7;
+}
+
+.about_block .filter_block,
+.about_block .info_text {
+    justify-content: start;
+}
+
+.second_part {
+    flex-direction: row-reverse;
+    margin-top: 48px;
+}
+
+.second_part .info_text {
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.products_block {
+    display: flex;
+    justify-content: center;
+}
+
+#product h2 {
+    margin-bottom: 140px;
+}
+
+#product .filter_links li {
+    margin-bottom: 40px;
+}
+
+#product a {
+    color: #037EFF;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#product a:visited {
+    font-size: 40px;
+    color: #999999;
+    text-decoration: none;
+}
+.icon_farseer {
+    height: 41px;
+    width: 37px;
+    margin-right: 10px;
+}
+
+h3.product_title {
+    display: inline-block;
+    color: #373737;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.slider_block p {
+    text-decoration: none;
+    color: #373737;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
