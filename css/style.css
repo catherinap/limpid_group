@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, p, figure {
     margin: 0;
 }
 
-.nav_bar ul, .info_block, .latest_news, .row {
+.nav_bar ul, .info_block, .latest_news, .row, .vacancies {
     display: flex;
 }
 
@@ -150,7 +150,7 @@ video[poster] {
     color: #555555;
 }
 
-h3.info_title {
+h4.info_title {
     font-weight: bold;
     font-size: 24px;
     text-decoration: underline;
@@ -232,8 +232,11 @@ img {
 
 .download_btn {
     background: white url("../images/download_white.png") 255px 7px no-repeat;
-    background-color: #1D49BA;
     background-size: 25px;
+    width: 100%;
+}
+.button {
+    background-color: #1D49BA;
     border: none;
     color: white;
     font-family: "Heebo", sans-serif;
@@ -241,7 +244,6 @@ img {
     font-size: 21px;
     border-radius: 5px;
     padding: 12px;
-    width: 100%;
     text-align: start;
     cursor: pointer;
     margin-top: 16px;
@@ -416,11 +418,12 @@ h3.product_title {
     flex-direction: column;
 }
 
-.row {
+.hiring_row {
     width: 1435px;
+    display: flex;
 }
 
-.row p {
+.row p, .hiring_info p {
     line-height: 1.5;
     color: #555555;
 }
@@ -430,26 +433,70 @@ h3.product_title {
     height: 793px;
     background-size: cover;
     padding: 218px 0 162px 156px;
-    width: 50%;
+    min-width: 55%;
     margin-right: 24px;
 }
+
 .background h2 {
     color: white;
     font-size: 77px;
     width: 82%;
 }
+
 .background p {
     color: white;
     width: 80%;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
 }
+
 .red_line {
     border: 2px solid #FF0000;
     margin: 40px 0;
 }
 
 .hiring_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hiring_info h3 {
+    color: #373737;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 48px;
+}
+
+
+
+.vacancy_links li {
+    margin-bottom: 20px;
+}
+
+.vacancy_links {
+    list-style: none;
+}
+
+.vacancy_links li::before {
+    content: "\2022";
+    color: #037EFF;
+    font-weight: bold;
+    display: inline-block;
+    width: .9em;
+    margin-left: -1em;
+}
+
+
+.vacancy_links a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #037EFF;
+}
+
+.hiring_info button.width {
     width: 50%;
 }
 
@@ -479,7 +526,7 @@ footer {
     border-left: 1px solid #FF0000;
 }
 
-.links_column, .logo_column {
+.links_column, .logo_column, .vacancy_links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
