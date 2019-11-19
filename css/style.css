@@ -406,10 +406,75 @@ h3.product_title {
     margin-bottom: 48px;
     margin-top: 0;
 }
+
 .product_description {
     margin: auto;
 }
+
 .product_content {
     display: flex;
     flex-direction: column;
+}
+
+.subscribe {
+    height: 480px; /*временно*/
+    background: linear-gradient(0deg, rgba(29,73,186,1) 0%, rgba(3,126,255,1) 100%);;
+
+}
+
+
+footer {
+    background-color: #303133;
+    padding: 85px 162px 42px;
+}
+
+.footer_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights {
+    color: #999999;
+    font-size: 15px;
+    font-family: "PT Sans", sans-serif;
+}
+
+.links_column {
+    padding: 0 30px 0 20px;
+    border-left: 1px solid #FF0000;
+}
+
+.links_column, .logo_column  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links_column:last-child {
+    border: none;
+    text-align: end;
+}
+
+.links_column a {
+    color: #999999;
+    margin-bottom: 10px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+}
+
+.links_column a:hover {
+    color: #DADADA;
+}
+
+.phone_number {
+    font-size: 24px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+.address {
+    color: white;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
 }
