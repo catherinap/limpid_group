@@ -324,6 +324,7 @@ img {
     color: #999999;
     text-decoration: none;
 }
+
 .icon_farseer {
     height: 41px;
     width: 37px;
@@ -340,9 +341,75 @@ h3.product_title {
     margin-bottom: 30px;
 }
 
+#gallery {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
 .slider_block p {
     text-decoration: none;
     color: #373737;
     margin-bottom: 30px;
     line-height: 1.6;
+}
+
+.slider_buttons {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 176px;
+}
+
+.slider_btn {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #DADADA;
+}
+
+.red {
+    background-color: #CB2026;
+}
+
+#gallery .photos {
+    position: relative;
+    height: 835px;
+}
+
+#gallery .photos img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#gallery .photos img.showed {
+    opacity: 1;
+}
+
+.tagline, .product_description h3.info_title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+}
+
+.tagline {
+    color: #007EFF;
+}
+
+.product_description .info_text {
+    justify-content: space-evenly;
+}
+
+.product_description .second_part {
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+.product_description {
+    margin: auto;
+}
+.product_content {
+    display: flex;
+    flex-direction: column;
 }
