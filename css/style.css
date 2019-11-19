@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, p, figure {
     margin: 0;
 }
 
-.nav_bar ul, .info_block, .latest_news {
+.nav_bar ul, .info_block, .latest_news, .row {
     display: flex;
 }
 
@@ -407,8 +407,8 @@ h3.product_title {
     margin-top: 0;
 }
 
-.product_description {
-    margin: auto;
+.last_child, .row {
+    margin-bottom: 48px;
 }
 
 .product_content {
@@ -416,12 +416,47 @@ h3.product_title {
     flex-direction: column;
 }
 
-.subscribe {
-    height: 480px; /*временно*/
-    background: linear-gradient(0deg, rgba(29,73,186,1) 0%, rgba(3,126,255,1) 100%);;
-
+.row {
+    width: 1435px;
 }
 
+.row p {
+    line-height: 1.5;
+    color: #555555;
+}
+
+.background {
+    background: url("../images/Careers.png") 0 0 no-repeat;
+    height: 793px;
+    background-size: cover;
+    padding: 218px 0 162px 156px;
+    width: 50%;
+    margin-right: 24px;
+}
+.background h2 {
+    color: white;
+    font-size: 77px;
+    width: 82%;
+}
+.background p {
+    color: white;
+    width: 80%;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+.red_line {
+    border: 2px solid #FF0000;
+    margin: 40px 0;
+}
+
+.hiring_info {
+    width: 50%;
+}
+
+.subscribe {
+    height: 480px; /*временно*/
+    background: linear-gradient(0deg, rgba(29, 73, 186, 1) 0%, rgba(3, 126, 255, 1) 100%);;
+}
 
 footer {
     background-color: #303133;
@@ -444,7 +479,7 @@ footer {
     border-left: 1px solid #FF0000;
 }
 
-.links_column, .logo_column  {
+.links_column, .logo_column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
