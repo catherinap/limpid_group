@@ -96,7 +96,7 @@ header {
     position: absolute;
     width: 550px;
     color: white;
-    bottom: 20%;
+    bottom: 30%;
     left: 8%;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 video[poster] {
-    height: 100vh;
+    height: 100%;
     object-fit: fill;
 }
 
@@ -205,7 +205,7 @@ img {
     height: 560px;
 }
 
-.filter_block h2 {
+.filter_block h2, .address_block h2 {
     display: inline-flex;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
@@ -230,11 +230,52 @@ img {
     margin-bottom: 10px;
 }
 
+.download_btn, .control_btn, .read_more, button {
+    cursor: pointer;
+}
+
 .download_btn {
     background: white url("../images/download_white.png") 255px 7px no-repeat;
     background-size: 25px;
     width: 100%;
 }
+
+.control_btn {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.read_more:hover {
+    background-color: rgba(255, 255, 255, 0.51);
+}
+
+.download_btn:hover, .width:hover {
+    background-color: #007EFF;
+}
+
+.read_more {
+    position: absolute;
+    border: 2px solid white;
+    color: #ffff;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: start;
+    cursor: pointer;
+    margin-top: 16px;
+    outline: none;
+    width: 300px;
+    bottom: 6%;
+    background: transparent url("../images/arrowdown.svg") no-repeat 240px 10px;
+    left: 40%;
+}
+
 .button {
     background-color: #1D49BA;
     border: none;
@@ -248,6 +289,15 @@ img {
     cursor: pointer;
     margin-top: 16px;
     outline: none;
+}
+
+.download_pdf {
+    background: transparent url("../images/Download.svg") 255px 10px no-repeat;
+    background-size: 25px;
+    width: 300px;
+    border: 2px solid #1D49BA;
+    color: #1D49BA;
+    align-self: center;
 }
 
 .latest_news .info_block {
@@ -304,6 +354,7 @@ img {
 .products_block {
     display: flex;
     justify-content: center;
+    margin-bottom: 144px;
 }
 
 #product h2 {
@@ -418,14 +469,19 @@ h3.product_title {
     flex-direction: column;
 }
 
-.hiring_row {
+.specifications {
+    display: flex;
+    flex-direction: column;
+}
+
+.hiring_row, .contact_row {
     width: 1435px;
     display: flex;
 }
 
-.row p, .hiring_info p {
+.row p, .hiring_info p, .contact_info p {
     line-height: 1.5;
-    color: #555555;
+    color: #373737;
 }
 
 .background {
@@ -455,21 +511,19 @@ h3.product_title {
     margin: 40px 0;
 }
 
-.hiring_info {
+.hiring_info, .contact_info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.hiring_info h3 {
+.hiring_info h3, .contact_info h3 {
     color: #373737;
     font-size: 48px;
     font-weight: bold;
     font-family: "Rubik", sans-serif;
     margin-bottom: 48px;
 }
-
-
 
 .vacancy_links li {
     margin-bottom: 20px;
@@ -488,7 +542,6 @@ h3.product_title {
     margin-left: -1em;
 }
 
-
 .vacancy_links a {
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
@@ -498,6 +551,63 @@ h3.product_title {
 
 .hiring_info button.width {
     width: 50%;
+}
+
+#contact {
+    padding-top: 134px;
+    margin-bottom: 165px;
+}
+
+.address_block {
+    display: flex;
+    flex-direction: column;
+    height: 335px;
+    justify-content: space-between;
+    padding-left: 158px;
+    padding-right: 28%;
+    margin-right: 24px;
+}
+
+.country {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.column_address_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.column_address_block p, .map p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.map {
+    display: flex;
+}
+
+.map p {
+    font-weight: bold;
+}
+
+.location {
+    display: flex;
+}
+
+.emails p {
+    margin: 20px 0;
+    color: #555555;
+}
+
+.emails p a {
+    color: #037EFF;
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
 }
 
 .subscribe {
