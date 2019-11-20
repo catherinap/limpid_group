@@ -248,6 +248,8 @@ img {
     background: none;
     outline: none;
     border: none;
+    z-index: 20;
+    opacity: 1;
 }
 
 .read_more:hover {

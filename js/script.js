@@ -29,6 +29,16 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     showSlides();
+
+//Video-play
+    let playBtn = document.querySelector('.control_btn');
+    let video = document.querySelector('video');
+
+    playBtn.addEventListener('click', function () {
+        playBtn.style.opacity = '0';
+        function playVid() {
+            video.play();
+        }
+        playVid();
+    });
 });
-
-
