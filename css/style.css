@@ -11,7 +11,7 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, p, figure {
+h1, h2, h3, h4, h5, p, figure, .nav_bar ul {
     margin: 0;
 }
 
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, p, figure {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 17px;
 }
 
 .main_wrapper {
@@ -726,4 +726,8 @@ footer {
     color: white;
     font-size: 16px;
     font-family: "PT Sans", sans-serif;
+}
+
+.hidden {
+    display: none;
 }
