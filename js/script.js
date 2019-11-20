@@ -31,11 +31,13 @@ window.addEventListener('DOMContentLoaded', function () {
     showSlides();
 
 //Video-play
-    let playBtn = document.querySelector('.control_btn');
-    let video = document.querySelector('video');
+    let playBtn = document.querySelector('.control_btn'),
+    video = document.querySelector('video'),
+        videoTitle = document.querySelector('.video_title');
 
     playBtn.addEventListener('click', function () {
         playBtn.style.opacity = '0';
+        videoTitle.style.opacity = '0';
         function playVid() {
             video.play();
         }

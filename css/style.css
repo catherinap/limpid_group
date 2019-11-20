@@ -75,9 +75,8 @@ h1, h2, h3, h4, h5, p, figure, .nav_bar ul {
     margin: 0 auto;
 }
 
-header {
+header, .video_presentation {
     position: relative;
-
 }
 
 .header_bar {
@@ -88,16 +87,13 @@ header {
     width: 100%;
 }
 
-.video_presentation {
-    position: relative;
-}
-
 .video_title {
     position: absolute;
     width: 550px;
     color: white;
     bottom: 30%;
     left: 8%;
+    transition: opacity .5s;
 }
 
 .video_title h1 {
@@ -249,7 +245,7 @@ img {
     outline: none;
     border: none;
     z-index: 20;
-    opacity: 1;
+    transition: opacity .5s;
 }
 
 .read_more:hover {
@@ -728,8 +724,4 @@ footer {
     color: white;
     font-size: 16px;
     font-family: "PT Sans", sans-serif;
-}
-
-.hidden {
-    display: none;
 }
