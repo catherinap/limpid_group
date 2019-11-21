@@ -39,7 +39,13 @@ window.addEventListener('DOMContentLoaded', function () {
         playBtn.style.opacity = '0';
         videoTitle.style.opacity = '0';
         function playVid() {
-            video.play();
+           if(video.paused) {
+               video.play();
+           } else {
+               video.addEventListener('click', function () {
+                   video.pause();
+               });
+           }
         }
         playVid();
     });
