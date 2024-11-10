@@ -1,2 +1,2 @@
 # limpid_group
-Corporate site (not finished due to layoffs)
+Corporate site (not released)
